@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="sketch.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 
 
 
 <body>
+    
 
     <main> 
         <!-- <div id="header"> <h2> Final Project </h2> </div> -->
@@ -25,6 +28,21 @@
        <button type="submit">Get Weather</button>
        
     </form> 
+
+
+    <a href="#popup" class="show-popup-btn">Note Here</a>
+
+    <!-- Pop-up note -->
+ <div id="popup"
+     class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-button">&times;</a>
+        <h2>Note here</h2>
+        <p>"Welcome! Hi there, feel free to explore my site by entering any location to check the current weather conditions and UV index."</p>
+      </div>
+    </div>
+    <!-- popupnote ends here -->
+
     </div>
 
     <div class="displayitems" style="display: none"> 

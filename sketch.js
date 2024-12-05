@@ -30,6 +30,7 @@ function setup() {
   
 }
 
+
 function draw() {
   // Clear the canvas
   background(135, 206, 250); // background color - sky blue 
