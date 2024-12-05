@@ -1,124 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="sketch.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js" defer></script>
 </head>
-
-
-
-
 <body>
-
-    <main> 
-        <!-- <div id="header"> <h2> Final Project </h2> </div> -->
-    </main>  
-    <div id="form-only"> 
-
-       <form class="weatherForm">
-       <input type="text" class="cityInput" placeholder="Enter city" >
-       <button type="submit">Get Weather</button>
-       
-    </form> 
+  <main>
+    <div id="header">
+      <h2>Weather App</h2>
     </div>
 
-    <div class="displayitems" style="display: none"> 
-
-        <!-- <h1 class="cityDisplay">San Jose</h1>
-        <p class="tempDisplay"><b>90°F</p> 
-        <p class="humidityDisplay">Humidity: 75%</p>
-        <p class="descDisplay">Clear Skies</p>
-        <p class="weatherEmoji">☀️</p>  
-        
-        // control + command + space bar //  
-         <p class="errorDisplay">Please enter a city</p> -->
-
+    <div id="form-only">
+      <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter city" />
+        <button type="submit">Get Weather</button>
+      </form>
     </div>
 
-
-        <!-- UV index info -->
-        <div class="uvi-info" style="display: none;">
-            <p class="uvi-value"></p>
-            <p class="uvi-description"></p>
-        </div>
-    
-
-    <!-- column box of UVI setup -->
-
-    
-    <div id="column"> 
-
-    
-       <div class="column"> 
-
-        <div class="green"> 
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        </div>
-
-        <div class="yellow"> 
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        </div>
-
-        <div class="orange"> 
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        </div>
-
-        <div class="red"> 
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">10</div>
-        </div>
-
-        <div class="purple"> 
-        <div class="grid-item">11</div>
-    
-    </div>
-        </div>
-        
-
-    <div id="textbox"> 
-
-      <div class="columns">
-       
-       <div class="low"> 
-        <h3>Low</h3>
-       </div> 
-
-       <div class="Moderate"> 
-        <h3>Moderate</h3>
-       </div>
-
-       <div class="High"> 
-        <h3>High</h3>
-        </div>
-
-        <div class="Very High"> 
-         <h3>Very High</h3>
-        </div>
-     
-        <div class="Exterme">  
-        <h3>Exterme</h3>
-        </div>
-       
+    <div class="displayitems" style="display: none;">
+      <h1 class="cityDisplay">San Jose</h1>
+      <p class="tempDisplay"><b>90°F</b></p>
+      <p class="humidityDisplay">Humidity: 75%</p>
+      <p class="descDisplay">Clear Skies</p>
+      <p class="weatherEmoji">☀️</p>
     </div>
 
+    <div id="column">
+      <div class="column">
+        <div class="green">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+        </div>
+        <div class="yellow">
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
+        <div class="orange">
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+        </div>
       </div>
-
     </div>
- 
 
-
-</section>
-
-
-</body>
-</html>
+    <div id="textbox">
+      <div class="columns">
+        <div class="low">
+          <h3>
