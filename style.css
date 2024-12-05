@@ -6,12 +6,23 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  color: white;
+
 }
 
-
+/* Background */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 @media only screen and (max-width:730px){
   :future forecast {
