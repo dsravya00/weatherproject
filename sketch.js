@@ -256,8 +256,9 @@ function displayWeatherInfo(data) {
   const tempDisplay = document.createElement("p"); 
   const humidityDisplay = document.createElement("p"); 
   const descDisplay = document.createElement("p"); 
-  const weatherEmoji = document.createElement("p"); 
   const uvDisplay = document.createElement("p"); // Ensure uvDisplay is created
+  const weatherEmoji = document.createElement("p"); 
+  
 
   // fill the elements with weather data - basic deatils of weather given here 
   cityDisplay.textContent = city;
