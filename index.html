@@ -7,34 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="sketch.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      </head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 
 
 
 <body>
 
     <main> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <div id="header"> <h2> Final Project </h2> </div> -->
-        <!-- <canvas id="defaultCanvas0" 
-        class="p5Canvas" width="0%" height="0%" style="width:0%; height: 100%;"></canvas> -->
     </main>  
     <div id="form-only"> 
 
        <form class="weatherForm">
        <input type="text" class="cityInput" placeholder="Enter city" >
-       <button type="submit">View Weather</button>
-   
+       <button type="submit">Get Weather</button>
        
     </form> 
     </div>
 
-    <div class="displayitems" style="display: none" > 
-<br> 
+    <div class="displayitems" style="display: none"> 
+
         <!-- <h1 class="cityDisplay">San Jose</h1>
         <p class="tempDisplay"><b>90°F</p> 
         <p class="humidityDisplay">Humidity: 75%</p>
@@ -46,7 +40,104 @@
 
     </div>
 
+
+        <!-- UV index info -->
+        <div class="uvi-info" style="display: none;">
+            <p class="uvi-value"></p>
+            <p class="uvi-description"></p>
+        </div>
+    
+
+    <!-- column box of UVI setup -->
+
+    
+    <div id="column"> 
+
+    
+       <div class="column"> 
+
+        <div class="green"> 
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        </div>
+
+        <div class="yellow"> 
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        </div>
+
+        <div class="orange"> 
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        </div>
+
+        <div class="red"> 
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        </div>
+
+        <div class="purple"> 
+        <div class="grid-item">11</div>
+    
+    </div>
+        </div>
+        
+
+    <div id="textbox"> 
+
+      <div class="columns">
+       
+       <div class="low"> 
+        <h3>Low</h3>
+       </div> 
+
+       <div class="Moderate"> 
+        <h3>Moderate</h3>
+       </div>
+
+       <div class="High"> 
+        <h3>High</h3>
+        </div>
+
+        <div class="Very High"> 
+         <h3>Very High</h3>
+        </div>
+     
+        <div class="Exterme">  
+        <h3>Exterme</h3>
+        </div>
+       
+    </div>
+
+      </div>
+
+    </div>
  
+
+    <!-- UVI  -->
+
+    <!-- <div class="container">
+        <h1>UV Index Report</h1>
+        <div class="input-container">
+            <input type="text" id="city" placeholder="Enter city" />
+            <button id="getUVBtn">Get UV Index</button>
+        </div>
+
+        <div id="spinner" class="spinner" style="display: none;">
+            <img src="spinner.gif" alt="Loading..."/>
+        </div>
+
+        <div id="uvi-info" class="uvi-info" style="display: none;">
+            <h3>UV Index: <span id="uvi-value"></span></h3>
+            <p id="uvi-description"></p>
+        </div>
+        
+        <div id="error-message" class="error-message" style="display: none;">
+            <p>City not found. Please try again.</p>
+        </div>
+    </div> -->
 
 
 </section>
