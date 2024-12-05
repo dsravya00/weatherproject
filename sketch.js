@@ -55,7 +55,7 @@ function draw() {
  textStyle(BOLD);
  translate(-20,-10); 
  text(days[new Date().getDay()], 1090, 60);// given current day - on top right 
- text(h + ':' + m + ':' + s, 1150, 100); 
+ text(h + ':' + m + ':' + s, 1130, 100); 
  // given current time - on top right(hour:minute:second)
 
 }
@@ -359,6 +359,7 @@ function getWeatherEmoji(weatherID) {
       return "🌄";  // Unknown weather
   }
 }
+
 weatherForm.addEventListener("submit", async event => {
   event.preventDefault();
 
