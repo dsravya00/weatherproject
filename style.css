@@ -5,9 +5,11 @@
 @media only screen and (max-width:730px){
   :future forecast {
 justify-content: start; 
+
   }
 
 } 
+
 
 canvas {
 padding-bottom: -30px;  
@@ -173,7 +175,7 @@ p{
 
 .cityDisplay .tempDisplay{
 font-size: 30px;
-margin-bottom: 25px; 
+margin-bottom: 30px; 
 /* gap inbeween  */
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
 }
@@ -188,6 +190,7 @@ margin-top: 15px;
 .descDisplay {
   font-style: italic;
   margin-top: 15px; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   /* gap inbeween  */
   
 }
@@ -203,49 +206,52 @@ margin-top: 15px;
   font-size: 20px;
   font-weight: bold;
   color: rgb(0, 0, 0);
+  display: block;
 }
 
 /* ///// end of given deatials of weather ///// */ 
 
-#column {
+
+/* botton row */
+
+#row {
   display: flexbox;
   width: 104%; 
   background-color: #333;
   color: rgb(0, 0, 0);
   height:200px; 
-margin-bottom: -65px;
+  margin-bottom: -130px;
+  height:400px;
 
 }
 
-.column { 
-  /* grid-template-columns: auto auto auto auto; */
+.row { 
   width: 80%; 
-  display: flexbox;
+  /* grid-template-columns: auto auto auto auto; */
+  /* /* width: 80%;  */
+  display: flexbox; 
   column-count: 11;
-  grid-gap: 10px;
-  margin: 48px; 
-  /* padding-top: 40px;  */
-  padding-left: 150px; 
-  /* padding-right: 100px;   */
-  grid-gap: 100px; 
- 
-
-
-
-}
-
+  margin-right: 0px; 
+  margin-top: 30px; 
+  padding-top: 30px;  
+  /* padding-left: 0px; 
+  padding-right: 0px;    */
+  /* grid-gap: 120px;  */
+  
+  
+  }
 
 
 
 
+
+/* for number section */
 .grid-item {
-padding-left: 20px;
-padding-top: 30px;
-background-color: white; 
-block-size: 100px; 
+padding-left: 40px;
+padding-top: 40px;
 width: 100px; 
 height: 100px;  
-/* margin: 0px 20px;  */
+margin: 0px 150px; 
 border-radius: 10px;
 
 
@@ -284,14 +290,13 @@ color: white;
 width:100%; 
 padding-left: 200px;  
 background-color: #333;
-margin-top: 10px; 
-
+margin-top: 20px; 
+display: block;
 }
 
 #textbox h3 {
-  
  padding-top: 20px;
  padding-bottom: 20px;
-   
+ text-align:justify;  
 }
 

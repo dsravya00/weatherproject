@@ -1,5 +1,6 @@
 
 // Weather Site 
+
 const apiKey = '9aff9ff557fa9efaa3cd7c0d2305a174';
 //code = https://openweathermap.org/current = API code 
 // Weather Conditions code = https://openweathermap.org/weather-conditions
@@ -105,7 +106,7 @@ ellipse(1150 / 2, 460 / 2, 25, 25);
 ellipse(1850 / 2, 600 / 2, 25, 25); 
 ellipse(1850 / 2, 460 / 2, 50, 50); 
 ellipse(1850 / 2, 750 / 2, 20, 20); 
-ellipse(1930 / 2, 940 / 2, 25, 25); 
+ellipse(2030 / 2, 940 / 2, 25, 25); 
 
 }
 
@@ -199,27 +200,27 @@ const apikey = "9aff9ff557fa9efaa3cd7c0d2305a174";
 const uvDisplay = document.querySelector("uvDisplay"); 
 
 weatherForm.addEventListener("submit", async event => {
-    event.preventDefault();
+  event.preventDefault();
 
-    const city = cityInput.value; 
+  const city = cityInput.value; 
 
-    if(city){
-        try{
-          const weatherData = await getWeatherData(city); 
-        //   weather data 
-        displayWeatherInfo(weatherData); 
-        }
-        catch(error){
-        console.error(error); 
-        displayError(error); 
-        } 
+  if(city){
+      try{
+        const weatherData = await getWeatherData(city); 
+      //   weather data 
+      displayWeatherInfo(weatherData); 
+      }
+      catch(error){
+      console.error(error); 
+      displayError(error); 
+      } 
 
-    }
-    else{
-      displayError("Opps: Please enter a city again");  
-    }
-    
-    }); 
+  }
+  else{
+    displayError("Opps: Please enter a city again");  
+  }
+  
+  }); 
 
 async function getWeatherData(city){
 //passed to the fetch function - code url from webpage - API call = whihc passes the deatils based on city name - live weather//
@@ -232,12 +233,14 @@ console.log(response);
 
 //given when response is error 
 if(!response.ok){
-   throw new Error("Please try again, I couldn't get the weather data because of an issue") 
+ throw new Error("Please try again, I couldn't get the weather data because of an issue") 
 }
 return await response.json(); 
 // return the object - weatherlistener 
-   
+ 
 }
+
+
 
 function displayWeatherInfo(data) {
   const { 
@@ -301,6 +304,10 @@ function fetchUVIndex(lat, lon, uvDisplay) {
 }
 
 // Update the UV index information on the page
+function updateUVInfo(uvIndex) {
+  spinner.style.display = 'none';  // Hide spinner
+  uviInfo.style.display = 'block'; // Show UV info
+}
 function updateUVInfo(uvIndex, uvDisplay) {
   uvDisplay.textContent = `UV Index: ${uvIndex}`;
 
@@ -351,3 +358,35 @@ function getWeatherEmoji(weatherID) {
       return "🌄";  // Unknown weather
   }
 }
+weatherForm.addEventListener("submit", async event => {
+  event.preventDefault();
+
+  const city = cityInput.value;
+
+  if (city) {
+    try {
+      const weatherData = await getWeatherData(city);
+      displayWeatherInfo(weatherData);
+    } catch (error) {
+      console.error("Error occurred:", error);
+      displayError(error.message); // Display the error message
+    }
+  } else {
+    displayError("Please enter a city.");
+  }
+});
+
+
+function displayError(message){
+
+  const errorDisplay = document.createElement("p"); 
+  errorDisplay.textContent = message; 
+  errorDisplay.classList.add("errorDisplay"); 
+
+
+displayitems.textContent = ""; //now the display is set to none but the below is setup of display in flex
+displayitems.style.display = "flex"; 
+displayitems.appendChild(errorDisplay); 
+ 
+
+}   
