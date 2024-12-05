@@ -359,7 +359,6 @@ function getWeatherEmoji(weatherID) {
       return "🌄";  // Unknown weather
   }
 }
-
 weatherForm.addEventListener("submit", async event => {
   event.preventDefault();
 
